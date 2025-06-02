@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="280" height="120" viewBox="0 0 280 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Shadow effect -->
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="1" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+  
+  <!-- K2CON Text - Solid orange, bold typography -->
+  <text x="140" y="55" text-anchor="middle" 
+        fill="#f59e0b" 
+        font-family="Arial Black, sans-serif" 
+        font-weight="900" 
+        font-size="44" 
+        letter-spacing="3px"
+        filter="url(#textShadow)"
+        dominant-baseline="middle">K2CON</text>
+  
+  <!-- CONSÓRCIOS Text - Smaller, spaced letters -->
+  <text x="140" y="85" text-anchor="middle" 
+        fill="#f59e0b" 
+        font-family="Arial, sans-serif" 
+        font-weight="400" 
+        font-size="14" 
+        letter-spacing="10px" 
+        opacity="0.9"
+        dominant-baseline="middle">CONSÓRCIOS</text>
+        
+  <!-- Subtle brand accent line -->
+  <line x1="50" y1="70" x2="230" y2="70" 
+        stroke="#f59e0b" 
+        stroke-width="1" 
+        opacity="0.4"/>
+</svg> 

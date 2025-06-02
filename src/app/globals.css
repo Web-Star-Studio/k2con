@@ -923,3 +923,151 @@ button {
 .border-dark-subtle {
   border-color: var(--border-dark-subtle);
 }
+
+/* Enhanced Typography and Animation Support */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* Clean Glass Effects */
+  .hero-glass-text {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Parallax Performance Optimization */
+  .parallax-layer {
+    will-change: transform;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  
+  /* Clean Glass Effect for Navigation */
+  .glass-premium {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  /* Enhanced Typography Utilities */
+  .font-display {
+    font-family: var(--font-playfair), serif;
+    font-feature-settings: "liga", "dlig", "kern";
+  }
+  
+  .font-body {
+    font-family: var(--font-source-sans), sans-serif;
+    font-feature-settings: "kern", "liga";
+  }
+  
+  .font-mono {
+    font-family: var(--font-inter), monospace;
+  }
+
+  /* Section Styling */
+  .section-padding {
+    padding: 6rem 0;
+  }
+
+  /* Typography Scale */
+  .text-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+  }
+
+  .text-subtitle {
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    line-height: 1.6;
+  }
+
+  /* Accent Line for Headings */
+  .accent-line::after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 0.25rem;
+    background: linear-gradient(90deg, var(--brand-orange), var(--brand-orange-bright));
+    margin: 1rem auto 0;
+    border-radius: 0.125rem;
+  }
+
+  /* Grid Background Pattern */
+  .minimal-grid {
+    background-image: 
+      linear-gradient(rgba(245, 158, 11, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(245, 158, 11, 0.1) 1px, transparent 1px);
+    background-size: 2rem 2rem;
+  }
+}
+
+@layer utilities {
+  /* Clean Animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  /* Animation Utilities */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Performance Optimizations */
+  .gpu-accelerated {
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+  }
+  
+  /* Responsive Typography */
+  .responsive-title {
+    font-size: clamp(2rem, 8vw, 6rem);
+  }
+  
+  .responsive-subtitle {
+    font-size: clamp(1rem, 3vw, 2rem);
+  }
+  
+  /* Scroll Performance */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Dark mode specific enhancements */
+@media (prefers-color-scheme: dark) {
+  .dark-mode-enhanced {
+    --tw-text-opacity: 1;
+    color: rgb(248 250 252 / var(--tw-text-opacity));
+  }
+}
+
+/* Motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .parallax-layer {
+    transform: none !important;
+  }
+}

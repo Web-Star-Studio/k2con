@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="100" viewBox="0 0 240 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fb923c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- K2CON Text - Main Brand -->
+  <text x="120" y="45" text-anchor="middle" fill="url(#orangeGradient)" 
+        font-family="Arial Black, sans-serif" font-weight="900" 
+        font-size="36" letter-spacing="3px">K2CON</text>
+  
+  <!-- CONSÓRCIOS Text - Subtitle -->
+  <text x="120" y="75" text-anchor="middle" fill="#f59e0b" 
+        font-family="Arial, sans-serif" font-weight="400" 
+        font-size="14" letter-spacing="8px" opacity="0.9">CONSÓRCIOS</text>
+</svg> 
