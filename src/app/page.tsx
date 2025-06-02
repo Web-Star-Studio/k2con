@@ -584,7 +584,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto relative z-10">
             <ScrollReveal>
               <div className="text-center mb-16">
-                <h2 className="text-title font-display text-gray-900 dark:text-gray-100 mb-4 accent-line inline-block">
+                <h2 className="text-title font-display text-gray-900 dark:text-gray-100 mb-4 inline-block">
                   Sobre a K2CON
                 </h2>
                 <p className="text-subtitle font-body max-w-3xl mx-auto text-gray-600 dark:text-gray-300">
@@ -639,7 +639,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto relative z-10">
             <ScrollReveal>
               <div className="text-center mb-16">
-                <h2 className="text-title font-display text-gray-900 dark:text-gray-100 mb-4 accent-line inline-block">
+                <h2 className="text-title font-display text-gray-900 dark:text-gray-100 mb-4 inline-block">
                   Nossas Operações
                 </h2>
                 <p className="text-subtitle font-body max-w-3xl mx-auto text-gray-600 dark:text-gray-300">
@@ -731,7 +731,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto relative z-10">
             <ScrollReveal>
               <div className="text-center mb-16">
-                <h2 className="text-title font-display text-gray-900 dark:text-gray-100 mb-4 accent-line inline-block">
+                <h2 className="text-title font-display text-gray-900 dark:text-gray-100 mb-4 inline-block">
                   Como Rentabilizar
                 </h2>
                 <p className="text-subtitle font-body max-w-3xl mx-auto text-gray-600 dark:text-gray-300">
@@ -873,7 +873,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <ScrollReveal>
               <div>
-                <h2 className="text-title font-display text-gray-900 dark:text-gray-100 mb-4 accent-line inline-block">
+                <h2 className="text-title font-display text-gray-900 dark:text-gray-100 mb-4 inline-block">
                   Atendimento Personalizado
                 </h2>
                 <p className="text-subtitle font-body text-gray-600 dark:text-gray-300 mb-8">
